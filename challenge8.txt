@@ -1,0 +1,15 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <math.h>
+int main() {
+   float N1, N2, N3, GM;
+   printf("enter the first number:\n");
+   scanf("%f",&N1);
+   printf("enter the second number:\n");
+   scanf("%f",&N2);
+   printf("enter the third number:\n");
+   scanf("%f",&N3);
+   GM= pow((N1 * N2 * N3),(1.0/3));
+   printf("the geometric mean of these three numbers is : %.2f",GM);
+    return 0;
+}
