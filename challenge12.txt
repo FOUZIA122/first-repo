@@ -1,0 +1,18 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <math.h>
+int main() {
+   int x, digit1, digit2, digit3, digit4;
+   printf("enter a four digit integer:\n");
+   scanf("%d",&x);
+   digit1 = x%10;
+   x = x/10;
+   digit2 = x%10;
+   x = x/10;
+   digit3 = x%10;
+   x = x/10;
+   digit4 = x%10;
+   x = x/10;
+  printf("the inverse integer is : %d%d%d%d",digit1,digit2,digit3,digit4);
+    return 0;
+}
