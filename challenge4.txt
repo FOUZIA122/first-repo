@@ -1,0 +1,14 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    float s, r;
+    
+    printf("enter the speed in km/h:\n");
+    scanf("%f",&s);
+    r= s * 0.27778;
+    printf("the speed in m/s: %.2f ",r);
+    
+
+    return 0;
+}
