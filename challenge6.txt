@@ -1,0 +1,15 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    float n1,n2;
+    printf("enter first number :\n");
+    scanf("%f",&n1);
+    printf("enter second number :\n");
+    scanf("%f",&n2);
+    printf("%.2f + %.2f = %.2f\n",n1, n2, n1+n2);
+    printf("%.2f - %.2f = %.2f\n",n1, n2, n1-n2);
+    printf("%.2f * %.2f = %.2f\n",n1, n2,n1*n2);
+    printf("%.2f / %.2f = %.2f",n1, n2, n1/n2);
+    return 0;
+}
