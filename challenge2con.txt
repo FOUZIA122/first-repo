@@ -1,0 +1,33 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <math.h>
+int main() {
+   char c;
+   printf("enter an alphabet :\n");
+   scanf(" %c",&c);
+   switch (c){
+       case 'a':
+       printf("it's a vowel");
+       break;
+       case 'e':
+       printf("it's a vowel");
+       break;
+       case 'i':
+       printf("it's a vowel");
+       break;
+       case 'y':
+       printf("it's a vowel");
+       break;
+       case 'o':
+       printf("it's a vowel");
+       break;
+       case 'u':
+       printf("it's a vowel");
+       break;
+       default:
+       printf("this alphabet is not a vowel..");
+       break;
+       
+   }
+    return 0;
+}
