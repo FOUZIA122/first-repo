@@ -1,0 +1,57 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int y, m, d;
+    printf("enter a year:\n");
+    scanf("%d",&y);
+    printf("enter a month:\n");
+    scanf("%d",&m);
+    printf("enter a day:\n");
+    scanf("%d",&d);
+    printf("%d/%d/%d\n",d,m,y);
+    switch(m){
+        case 1:
+        printf("%d/juanury/%d",d,y);
+        break;
+        case 2:
+        printf("%d/february/%d",d,y);
+        break;
+        case 3:
+        printf("%d/mars/%d",d,y);
+        break;
+        case 4:
+        printf("%d/april/%d",d,y);
+        break;
+        case 5:
+        printf("%d/may/%d",d,y);
+        break;
+        case 6:
+        printf("%d/juin/%d",d,y);
+        break;
+        case 7:
+        printf("%d/juil/%d",d,y);
+        break;
+        case 8:
+        printf("%d/aughust/%d",d,y);
+        break;
+        case 9:
+        printf("%d/september/%d",d,y);
+        break;
+        case 10:
+        printf("%d/october/%d",d,y);
+        break;
+        case 11:
+        printf("%d/november/%d",d,y);
+        break;
+        case 12:
+        printf("%d/december/%d",d,y);
+        break;
+        default:
+        printf("this number isn't exact..");
+        break;
+    
+    }
+
+    return 0;
+}
