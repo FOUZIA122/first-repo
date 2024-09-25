@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main() {
+    int h1, h2, m1, m2, s1, s2;
+    printf("(HH:MM:SS) : ");
+    scanf("%d%d%d",&h1,&m1,&s1);
+    printf("(HH:MM:SS) : ");
+    scanf("%d%d%d",&h2,&m2,&s2);
+    if(h1>h2){
+        printf("the first time come before the second");
+    }
+    else if(h1<h2){
+        printf("the second time come before the first");
+    }
+    else{
+        if(m1>m2){
+            printf("the first time come before the second");
+        }
+        else if(m1<m2){
+        printf("the second time come before the first");
+        }
+        else{
+            if(s1>s2){
+            printf("the first time come before the second");
+        }
+        else if(s1<s2){
+        printf("the second time come before the first");
+        }
+        else
+        printf("the time is equal");
+    
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }   
+          return 0;
+}
