@@ -2,36 +2,20 @@
 #include <stdio.h>
 
 int main() {
-    int M, D, H, S, MT, Y, n;
+    int M, D, H, S, MT, Y;
     printf("enter the year :\n");
     scanf("%d",&Y);
-    printf("1-month\n2-day\n3-hour\n4-minute\n5-second\n");
-    scanf("%d",&n);
     M = Y*12;
     D = Y*365;
     H = Y*365*24;
     MT = Y*365*24*60;
     S = Y*365*24*60*60;
-    switch (n){
-    case 1:
     printf("in this year there is %d months\n",M);
-    break;
-    case 2:
     printf("in this year there is %d days\n",D);
-    break;
-    case 3:
     printf("in this year there is %d hours\n",H);
-    break;
-    case 4:
     printf("in this year there is %d minutes\n",MT);
-    break;
-    case 5:
     printf("in this year there is %d seconds\n",S);
-    break;
-    default:
-    printf("wrong choice");
-    break;
-    }
+    
 
     return 0;
 }
