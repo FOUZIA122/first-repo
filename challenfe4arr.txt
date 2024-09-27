@@ -1,0 +1,17 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+   
+    int table[4] = {1,32,43,55};
+    int max = table[0];
+    int i;
+    for(i=0;i<4;i++){
+        if(max<table[i]){
+            max = table[i];
+        }
+    }
+    printf("The maximum is : %d",max);
+   
+    return 0;
+}
