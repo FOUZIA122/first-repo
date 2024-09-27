@@ -1,0 +1,25 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+   
+   int i, x, n;
+   
+      printf("enter the number of index : ");
+      scanf("%d",&x);
+      int array[x];
+      
+      for(i=0;i<x;i++){
+           printf("enter the number : ");
+           scanf("%d",&array[i]);
+       }
+       
+       printf("enter the number you want to calculate :  ");
+       scanf("%d",&n);
+   
+       for(i=0;i<x;i++){
+           
+           printf("  %d * %d = %d\n",n,array[i],n*array[i]);
+       }
+    return 0;
+}
