@@ -1,0 +1,27 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+   
+    int i, x, s = 0;
+    
+      printf("enter the number of index : ");
+      scanf("%d",&x);
+      int array[x];
+       
+       for(i=0;i<x;i++){
+           printf("enter the number : ");
+           scanf("%d",&array[i]);
+           
+       }
+      for(i=0;i<x;i++){
+          printf("%d  ",array[i]);  
+      }
+      for(i=0;i<x;i++){
+        s += array[i];
+         
+      }
+      printf("\n\nthe sum of tables values is : %d",s);
+   
+    return 0;
+}
