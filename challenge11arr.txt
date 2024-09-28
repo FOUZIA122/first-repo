@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    
+     int x, i, n, replace;
+     int change;
+     printf("enter an index : ");
+     scanf("%d",&x);
+     int table[x];
+     for(i=0;i<x;i++){
+         printf("enter a value : ");
+         scanf("%d",&n);
+         table[i]=n;
+     }
+     printf("enter the number you want to change it : ");
+     scanf("%d",&replace);
+     printf("enter the number you want to replace it : ");
+     scanf("%d",&change);
+     
+     for(i=0;i<x;i++){
+         if(table[i]==replace)
+           table[i]=change;
+     }
+     for(i=0;i<x;i++)
+       printf(" %d ",table[i]);
+     
+    return 0;
+}

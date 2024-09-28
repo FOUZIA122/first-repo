@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    
+     int x, i, n;
+     
+     
+     printf("enter an index : ");
+     scanf("%d",&x);
+     
+     int table[x];
+     int eventable[x];
+     int evencount=0;
+     
+     for(i=0;i<x;i++){
+         printf("enter a value : ");
+         scanf("%d",&n);
+         table[i]=n;
+     }
+     
+     for(i=0;i<x;i++){
+         if(table[i] % 2 == 0){
+            
+             eventable[evencount] = table[i];
+             evencount++;
+     }
+     }
+     printf("The even table : ");
+     for(i = 0; i< evencount; i++){
+     printf("%d  ",eventable[i]);
+     }
+    return 0;
+}

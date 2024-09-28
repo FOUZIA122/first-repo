@@ -1,0 +1,32 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    
+     int x, i, n;
+     
+     
+     printf("enter an index : ");
+     scanf("%d",&x);
+     
+    int table[x];
+     
+     for(i=0;i<x;i++){
+         printf("enter a value : ");
+         scanf("%d",&n);
+         table[i]=n;
+     }
+    
+    int s =0;
+    int average;
+    for(i=0;i<x;i++){
+        s  = s + table[i];
+       
+    }
+    
+    average = s / x;
+    
+   printf("%d ",average);
+   
+    return 0;
+}

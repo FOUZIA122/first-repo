@@ -1,0 +1,34 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    
+     int x, i, n;
+     
+     
+     printf("enter an index : ");
+     scanf("%d",&x);
+     
+     int table[x];
+     int oddtable[x];
+     int oddcount=0;
+     
+     for(i=0;i<x;i++){
+         printf("enter a value : ");
+         scanf("%d",&n);
+         table[i]=n;
+     }
+     
+     for(i=0;i<x;i++){
+         if(table[i] % 2 != 0){
+            
+             oddtable[oddcount] = table[i];
+             oddcount++;
+     }
+     }
+     printf("The even table : ");
+     for(i = 0; i< oddcount; i++){
+     printf("%d  ",oddtable[i]);
+     }
+    return 0;
+}
