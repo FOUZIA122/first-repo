@@ -1,0 +1,15 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    float temperateur;
+    
+    printf("veuillez saisir  votre temperatutre: ");
+    scanf("%f",&temperateur);
+    
+    if(temperateur>=38)
+        printf("vous avez de la fievre..");
+    else
+        printf("votre temperature est normale..");
+    return 0;
+}

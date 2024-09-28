@@ -1,0 +1,39 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int NT;
+    float N;
+    float max=0 , min=0;
+    int i;
+    printf("veuillez entrez le nombre des indices: ");
+    scanf("%f",&NT);
+    
+    int temperateure[NT];
+    
+    for(i=0;i<NT;i++){
+        printf("veuillez entrez le nombre  : ");
+        scanf("%f",&N);
+    }
+   
+    for(i=0;i<temperateure[N];i++){
+        if(max<temperateure[i]){
+            max = temperateure[i];
+        }
+        }
+        
+    for(i=0;i<temperateure[N];i++){
+        if(min>temperateure[i]){
+            min = temperateure[i];
+                
+        }   
+    }
+    
+     printf("la plus haute temperature est : %.2f\n",max);
+    
+     printf("la plus basse temperature est : %.2f",min); 
+        
+
+   return 0;
+}
+  
