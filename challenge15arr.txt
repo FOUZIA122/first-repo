@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main() {
+    
+     int x, i, n;
+     int x1, i1, n1;
+     
+     printf("enter an index (table 1): ");
+     scanf("%d",&x);
+     
+    int table[x];
+     
+     printf("enter an index (table 2): ");
+     scanf("%d",&x1);
+     
+    int table1[x1];
+    
+     for(i=0;i<x;i++){
+         printf("enter a value (table 1): ");
+         scanf("%d",&n);
+         table[i]=n;
+     }
+    
+     for(i1=0;i1<x1;i1++){
+         printf("enter a value (table 2): ");
+         scanf("%d",&n1);
+         table1[i1]=n1;
+     }
+     
+    int Mergestable[x + x1];
+    int k =0;
+    
+     for(i=0;i<x;i++){
+         Mergestable[k++] = table[i];
+  
+     }
+     
+     for(i1=0;i1<x1;i1++){
+         Mergestable[k++] = table1[i1];
+  
+     }
+     
+     for(int j=0;j< x + x1;j++){
+         printf("%d ",Mergestable[j]);
+     }
+     
+    return 0;
+}
