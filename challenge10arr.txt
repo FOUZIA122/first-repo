@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    
+     int x, i, n, r;
+     printf("enter an index : ");
+     scanf("%d",&x);
+     int table[x];
+     for(i=0;i<x;i++){
+         printf("enter a value : ");
+         scanf("%d",&n);
+         table[i]=n;
+     }
+     printf("enter the number search : ");
+     scanf("%d",&r);
+     
+     int found=0;
+     
+    for(i=0;i<x;i++){
+        if(table[i]==r){
+        found=1;
+        break;
+        }
+    }
+    
+    if(found)
+       printf("the number it's in the table.");
+    else
+       printf("the number isn't in the table.");
+    return 0;
+}
