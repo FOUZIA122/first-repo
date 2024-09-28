@@ -1,0 +1,26 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    
+    int table[4] = {23,7,6,54};
+    int copetable[4];
+    int i;
+    
+    for(i=0;i<4;i++){
+        copetable[i]=table[i];
+        
+    }
+    printf("copietable : ");
+    
+    for(i=0;i<4;i++){
+        printf("%d  ",copetable[i]);
+    }
+    
+    printf("\noriginaltable : ");
+    
+    for(i=0;i<4;i++){
+          printf("%d  ",table[i]);
+    }
+    return 0;
+}

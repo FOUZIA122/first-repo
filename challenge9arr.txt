@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    
+     int x, i, n;
+     printf("enter an index : ");
+     scanf("%d",&x);
+     int table[x];
+     for(i=0;i<x;i++){
+         printf("enter a value : ");
+         scanf("%d",&n);
+         table[i]=n;
+     }
+    printf("[");
+    for(i=x-1;i>=0;i--){
+        printf(" %d ",table[i]);
+    }
+    printf("]");
+    return 0;
+}
