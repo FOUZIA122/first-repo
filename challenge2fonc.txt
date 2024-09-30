@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int multiple(int a, int b){
+    return a * b;
+}
+int main() {
+    int n1, n2;
+    printf("enter a number : ");
+    scanf("%d",&n1);
+    printf("enter a number : ");
+    scanf("%d",&n2);
+    
+    int multiplication = multiple(n1, n2);
+    
+    printf("%d",multiplication);
+
+    return 0;
+}
