@@ -15,6 +15,7 @@ int main() {
     
     for(i=0;i<4;i++){
         printf("%d  ",copetable[i]);
+
     }
     
     printf("\noriginaltable : ");

@@ -1,0 +1,21 @@
+#include <stdio.h>
+   void reverse(char chain[], int lenght){
+       for(int i = lenght-1 ; i >= 0;i--){
+           printf("%c",chain[i]);
+       }
+   }
+   
+
+int main() {
+    char table[50];
+    
+    printf("enter anything : ");
+    scanf("%s",&table);
+    int lt = 0;
+    while(table[lt] != '\0'){
+        lt++;
+    }
+    printf("the reverse chaine is :\n");
+    reverse(table, lt);
+    return 0;
+}
