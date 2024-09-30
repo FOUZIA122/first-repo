@@ -1,0 +1,118 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <string.h>
+
+
+int main() {
+   int max_books = 100;
+   int count = 0;
+   char titre[100][50];
+   char autheur[100][50];                
+   float prix[100];
+   int quantite[100];
+   int x = 0;
+   int choice;
+    do{
+     printf("\n*********le tableaux des choix**********\n");
+     printf("1_Ajouter un livre au stock.\n");
+     printf("2_Afficher tous les livres disponibles.\n");
+     printf("3_Rechercher un livre par son titre.\n");
+     printf("4_Mettre à jour la quantité d'un livre.\n");
+     printf("5_Supprimer un livre du stock.\n");
+     printf("6_Afficher le nombre total de livres en stock\n\n");
+    scanf("%d",&choice);
+
+    
+    switch (choice){
+        case 1:
+      
+        if(count < max_books){
+          printf("\nles donnes de livre : \n");
+          printf("le titre de livre : ");
+          scanf(" %s",titre[count]);
+          printf("le auteur de livre : ");
+          scanf(" %s",autheur[count]);
+          printf("le prix de livre : ");
+          scanf("%f",&prix[count]);
+          printf("le quantite en stock : ");
+          scanf("%d",&quantite[count]);
+          count++;
+          
+        }
+        else
+          printf("le stock est plein..");
+        break;
+            
+       
+        
+     
+        case 2:
+        
+        for(int i = 0; i < count; i++){
+          printf("\nle titre de livre : %s\n",titre[i]);
+          
+          printf("le auteur de livre : %s\n",autheur[i]);
+          
+          printf("le prix de livre : %.2f\n",prix[i]);
+ 
+          printf("le quantite en stock : %d\n",quantite[i]);
+        
+        }
+        break;
+        case 3:
+        char titrerechercher[50];
+        
+        printf("entrer le titre de livre : ");
+        scanf("%s",titrerechercher);
+        for(int i = 0; i <= count-1;i++){
+        if(strcmp(titrerechercher, titre[i]) == 0)
+            x = 1;
+        break;
+        
+           
+}
+        if(x == 1)
+          
+          printf("Le livre que vous cherchez est dans le stock.. ");
+
+        else
+           printf("Le livre que vous cherchez est n'ya pas dans le stock.. ");
+         break;
+        
+        case 4:
+           printf("entrer le titre de livre Qui veut connaître son quantite : ");
+           scanf("%s",titrerechercher);
+           
+        for(int i = 0; i <= quantite[count];i++){
+        if(strcmp(titrerechercher, titre[i]) == 0)
+          printf("la quantite de cette livre est : %d",quantite[i]);
+          
+        }
+        break;
+        
+        case 5:
+          printf("entrer le titre de livre Qui veut de suprimer : ");
+          scanf("%s",titrerechercher);
+        for(int i = 0; i <= quantite[count];i++){
+        if(strcmp(titrerechercher, titre[i]) == 0)
+        count--;
+          
+        }
+        
+        break;
+        
+        case 6:
+        
+        printf("le nombre totale de livres en stock est : %d",count);
+        break;
+        
+        default:
+          printf("entrez vous le nombre exact");
+          break;
+        
+        
+        
+}
+    }while(choice != 0);
+    return 0;
+}
