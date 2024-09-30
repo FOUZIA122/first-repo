@@ -4,14 +4,14 @@
 int main() {
    
     int table[4] = {1,32,43,55};
-    int max = table[0];
+    int min = table[0];
     int i;
     for(i=0;i<4;i++){
-        if(max>table[i]){
-            max = table[i];
+        if(min>table[i]){
+            min = table[i];
         }
     }
-    printf("The maximum is : %d",max);
+    printf("The maximum is : %d",min);
    
     return 0;
 }
