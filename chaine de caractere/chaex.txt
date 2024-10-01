@@ -1,0 +1,28 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int tab[] = {1,0,21,0,55,0,9};
+    int size =7;
+    
+    for(int i = 0; i < 7; i++){
+        if(tab[i] == 0){
+            for(int j = i +1; j< 7; j++){
+                tab[j - 1] = tab[j];
+            }
+            size--;
+            i--;
+        }
+    }
+    for (int i = size; i < 7; i++) {
+        tab[i] = 0;
+    }
+    for (int i = 0; i < 7; i++) {
+        printf("%d ", tab[i]);
+        
+    }
+        
+        
+        
+    return 0;
+}
