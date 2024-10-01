@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+   char chain[50];
+     printf("enter anything\n");
+     scanf("%s",chain);
+    
+     printf("%s",chain);
+
+    return 0;
+}
