@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    
+    char chain1[100];
+    char chain2[100];
+    
+    
+    printf("enter somthing : ");
+    scanf("%s",chain1);
+    printf("enter somthing : ");
+    scanf("%s",chain2);
+    
+    
+ 
+       if (strcmp(chain1, chain2) == 0) {
+        printf("The words you have entered are the same.\n");
+    } else {
+        printf("The words you have entered are different.\n");
+    }
+    return 0;
+}
