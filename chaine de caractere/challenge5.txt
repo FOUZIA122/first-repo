@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    
+    char tab[] = "abcd";
+    
+    int lenght = strlen(tab);
+   
+    
+    for(int i = lenght - 1;i >= 0; i--){
+        printf("%c", tab[i]);
+        
+    }
+    return 0;
+}
