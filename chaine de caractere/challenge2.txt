@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int add = 0;
+    char chain[] = "hello";
+     for(int i = 0; chain[i] != '\0'; i++){
+          add++;
+     }
+     printf("the lenght of this word 'hello' is : %d",add);
+
+    return 0;
+}
