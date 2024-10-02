@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+
+struct person {
+   int note[5] ;
+   char name[50];
+   char first_name[50];
+};
+int main() {
+    struct person p1;
+    
+   int notes[5] = {12, 20, 14, 15, 13};
+    for (int i = 0; i < 5; i++) {
+        p1.note[i] = notes[i];
+    }
+    
+    
+     
+     printf("%s",p1.name);
+     printf("%s",p1.first_name);
+     
+     strcpy(p1.name, "\nDFG\n");
+    strcpy(p1.first_name, "sdfgh");
+     
+     for(int i = 0; i < 5; i++){
+         printf("%d  ",p1.note[i]);
+     }
+     
+    return 0;
+}
