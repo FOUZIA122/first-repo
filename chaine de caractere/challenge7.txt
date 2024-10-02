@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    char alphabetlower[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+    char alphabetupper[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+    
+    char word[59]; 
+    printf("Enter something: ");
+    scanf("%s", word);  
+    for(int i = 0; i < 26; i++) {
+        
+        if(word[i] >= 'a' && word[i] <= 'z') {
+            word[i] = alphabetlower[word[i] - 'a']; 
+        } else if(word[i] >= 'A' && word[i] <= 'Z') {
+            word[i] = alphabetupper[word[i] - 'A']; 
+        }
+    }
+
+    
+    printf("Converted: %s\n", word);
+
+    return 0;
+}
