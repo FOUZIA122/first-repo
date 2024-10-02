@@ -1,0 +1,80 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <string.h>
+  void search(int id){
+      return id;
+  }
+  int main (){
+     int choice;
+     int counter = 0;
+     int max_reservations = 200;
+     char first_name[max_reservations][50];
+     char name[max_reservations][50];
+     int phone_number[max_reservations];
+     int age[max_reservations];
+     char status[max_reservations][50];
+     int month[max_reservations], day[max_reservations], year[max_reservations];
+     char modifychoice[max_reservations];
+   do{
+   printf(" *******Dental appointment menu******\n\n");
+   printf("  1_Add a reservation.\n");
+   printf("  2_Modify or delete a reservatio.\n");
+   printf("  3_View the details of a reservation.\n");
+   printf("  4_Tri of reservation. \n");
+   printf("  5_Search for a reservation. \n");
+   printf("  6_Statistics. \n\n");
+   scanf("%d",&choice);
+   
+   
+   switch(choice){
+       case 1:
+       if(counter < max_reservations){
+            printf("\nAdd a reservation.\n");
+            printf("enter your first name : \n");
+            scanf("%s", first_name[counter]);
+            printf("enter your name : \n");
+            scanf("%s", name[counter]);
+            printf("enter your phone number : \n+212 ");
+            scanf("%d",&phone_number[counter]);
+            printf("enter your age : \n");
+            scanf("%d",&age[counter]);
+            printf("choice a status  (validated, postponed, cancelled, processed) : \n");
+            scanf("%s", status[counter]);
+            for(int i = 1; i < counter; i++){
+                printf("your ID is : %d",i);
+            }
+            printf("chose the date of reservation (dd/MM/yy): \n");
+            scanf("%d%d%d",&day[counter],&month[counter],&year[counter]);
+            counter++;
+       }
+       else
+           printf("\nthere is no other reservation..");
+       break;
+       
+       case 2:
+       
+       int id;
+       printf("what did you want modify or delete your reservation ? (M/D)\n");
+       scanf(" %c", modifychoice);
+       if(modifychoice == 'M'){
+            printf("enter your ID : \n");
+            scanf("%d",&id);
+            
+       }
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+   }
+   
+   
+   
+   }while(choice != 0);
+    return 0;
+}
